@@ -9,22 +9,14 @@ const pokemonList = [
   },
 ];
 
-function PokemonCard() {
-const pokemon = pokemonList[1];
+  function PokemonCard() {
+  const pokemon = pokemonList[1];
 
   return (
-    <div>
+    <figure>
+      {pokemon.imgSrc ? <img src={pokemon.imgSrc} alt="pokemon" /> : <p>???</p>}
       <figcaption>{pokemon.name}</figcaption>
-      {pokemon.imgSrc ? (
-        <img
-          src={pokemon.imgSrc}
-          alt={pokemon.name} 
-        />
-      ) : (
-        <p>???</p>
-      )}
-    </div>
+    </figure>
   );
 }
-
 export default PokemonCard;
