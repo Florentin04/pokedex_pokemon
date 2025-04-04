@@ -1,4 +1,4 @@
-import PokemonCard from "./components/PokemonCard";
+import PokemonCard from "./components/pokemonCard";
 
 const pokemonList = [
   {
